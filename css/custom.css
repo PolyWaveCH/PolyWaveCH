@@ -36,7 +36,7 @@ a:hover{
 /*-----Header & Footer-----*/
 .page_header {
     min-height: 1000px;
-    background: url("../img/header/header_1080p.jpg"), center no-repeat;
+    background: url("../img/header/header_1080p.png"), center no-repeat;
     background-size: cover;
 }
 
@@ -418,7 +418,7 @@ a:hover{
     .page_header {
         height: 100vh;
         min-height: 500px;
-        background: url("../img/header/header_980p.jpg"), center no-repeat;
+        background: url("../img/header/header_980p.png"), center no-repeat;
         background-size: cover;
     }
 
@@ -464,7 +464,7 @@ a:hover{
     .page_header {
         height: 100vh;
         min-height: 500px;
-        background: url("../img/header/header_736p.jpg"), center no-repeat;
+        background: url("../img/header/header_736p.png"), center no-repeat;
         background-size: cover;
     }
 }
