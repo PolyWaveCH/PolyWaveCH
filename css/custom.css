@@ -103,9 +103,10 @@ a:hover{
 }
 
 #downloadButton {
-    display: block;
-    height: 100px;
+    heigth: 100px;
     width: 160px;
+    border: none;
+    background: none;
 }
 
 
