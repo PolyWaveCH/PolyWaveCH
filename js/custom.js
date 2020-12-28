@@ -1,9 +1,9 @@
 /*-----Script for Header-Text fade-in-----*/
 $(document).ready(function () {
-    $("#polyWaveTitle").fadeIn(2500); 
-    $("#endlessWaves").delay(2500).fadeIn(2500);
-    $("#endlessEnemies").delay(3000).fadeIn(2500);
-    $("#endlessFun").delay(3500).fadeIn(2500);
+    $("#polyWaveTitle").fadeIn(1500); 
+    $("#endlessWaves").delay(2500).fadeIn(1500);
+    $("#endlessEnemies").delay(3000).fadeIn(1500);
+    $("#endlessFun").delay(3500).fadeIn(1500);
 });
 
 /*-----Script for the radial-menu animations-----*/
