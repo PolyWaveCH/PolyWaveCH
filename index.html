@@ -4,14 +4,9 @@
         <title>PolyWave</title>
         <meta charset="utf-8">
         <meta name="author" content="Patrick Gemperle">
-        <!--Bootstrap-->
+        <!--Stylesheets-->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.css">
-        <!--Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css"> 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">        
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,700,900" rel="stylesheet" type="text/css">
         <!--Icons-->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <!--Metadata Tag for responsiveness-->
@@ -20,96 +15,48 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     </head>
     <body>
-        <header class="page_header"  title="A portrait of Patrick Gemperle">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12 text-center">
-                        <h1 class="display-2 header_text" id="polyWaveTitle">PolyWave</h1>
-                        <h2 class="display-1 header_text" id="endlessWaves">Endless Waves</h2>
-                        <h2 class="display-1 header_text" id="endlessEnemies">Endless Enemies</h2>
-                        <h2 class="display-1 header_text" id="endlessFun">Endless Fun</h2>
+        <div class="page_background"  title="Screenshot of PolyWave"></div>
+
+        <div class="container contentOverlay">
+            <div id="titleRoot">
+                <div data-text="POLYWAVE" id="titleGlitch">POLYWAVE</div>        
+            </div>
+
+            <iframe class="trailer" width="1280" height="720"
+                src="https://www.youtube.com/watch?v=WW8EktmBP8M&feature=youtu.be">
+            </iframe>
+            
+            <div id="textRoot">
+                <div data-text="How far will YOU make it?" id="textGlitch">How far will YOU make it?</div>        
+                <form class="text-center" style="margin-top: 50px" method="get" action="/files/test.apk">
+                    <input type="image" id="downloadButton" src="img/Download_Android.png" alt="Download on Android"/>
+                </form>
+            </div>
+        </div>
+
+        <section class="footer">
+            <div class="container text-center">
+                <p class="text-center"><a data-toggle="modal" data-target="#contactdata_modal">Credit</a></p>
+                
+                <!--Modal for contactdata-->
+                <div class="modal fade" id="contactdata_modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h1 class="col-12 modal-title text-center">Credit</h1>
+                            </div>
+                            <div class="modal-body">
+                              <i class="colored_icon fa fa-envelope fa-2x"></i><br/>
+                              <p><a href="mailto:gemperle.patrick@gmail.com">gemperle.patrick@gmail.com</a></p>
+                              <i class="colored_icon fa fa-xing fa-2x"></i><br/>
+                              <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Visit me on XING!</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <!--Wrapper-Div for content-->
-        <div class="wrapper" id="wrapper">
-            <!--about-me section-->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="heading text-center">
-                                <h1 class="section_title about_me">About PolyWave</h1>
-                                <p class="about_me_text">LOREM IPSUM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </section>
-            <section class="divider">
-                <img class="img_separator" src="img/sep.png" alt="section-separator">  
-            </section>
-
-            <!--education section-->
-            <section class="section" id="education">
-                <div class="container">
-                    <div class="heading text-center">
-                        <h1 class="section_title">Download & play now!</h1>
-                    </div>
-                    <form class="text-center" method="get" action="/files/test.apk">
-                        <button id="downloadButton" type="submit">
-                            <img height="100px" width="160px" src="img/Download_Android_fin.svg"/>
-                        </button>
-                    </form>
-                </div>
-            </section>
-            <section class="divider">
-                <img class="img_separator" src="img/sep.png" alt="section-separator">  
-            </section>
-
-            <!--footer section-->
-            <section class="footer" id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="text-center">Design by <a data-toggle="modal" data-target="#contactdata_modal">Patrick Gemperle</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="text-center"><a data-toggle="modal" data-target="#credits_modal">Credits</a></p>
-                        </div>
-                    </div>
-                    <!--Modal for contactdata-->
-                    <div class="modal fade" id="contactdata_modal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h1 class="col-12 modal-title text-center"><i class="colored_icon fa fa-address-card" style="margin-right: 10px;"></i>Kontaktdaten</h1>
-                                </div>
-                                <div class="modal-body">
-                                  <i class="colored_icon fa fa-home fa-2x"></i><br/>
-                                  <p>
-                                    Patrick Gemperle<br/>
-                                    Altwinkelnstrasse 19<br/>
-                                    9015 St. Gallen                                    
-                                  </p>
-                                  <i class="colored_icon fa fa-phone fa-2x"></i><br/>
-                                  <p>+41 79 702 52 95</p>
-                                  <i class="colored_icon fa fa-envelope fa-2x"></i><br/>
-                                  <p><a href="mailto:patrick.gemperle@outlook.com">patrick.gemperle@outlook.com</a></p>
-                                  <i class="colored_icon fa fa-xing fa-2x"></i><br/>
-                                  <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Visit me on XING!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </section>
 
         <!--jQuery, must be before Bootstrap to avoid uncaught error-->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
