@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
     <head>
         <title>PolyWave</title>
         <meta charset="utf-8">
@@ -15,52 +15,54 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     </head>
     <body>
-        <div class="page_background"  title="Screenshot of PolyWave"></div>
+        <div class="flex-container">
+            <main class="content">
+                <div id="title-root">
+                    <div data-text="POLYWAVE" id="title-glitch">POLYWAVE</div>        
+                </div>               
+           
+                <div class="iframe-container">
+                    <iframe class="responsive-iframe"
+                    src="https://www.youtube.com/embed/WW8EktmBP8M" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media;" 
+                    allowfullscreen></iframe>
+                </div>
 
-        <div class="container contentOverlay">
-            <div id="titleRoot">
-                <div data-text="POLYWAVE" id="titleGlitch">POLYWAVE</div>        
-            </div>
+                <div class="subtext">How far will</div>
+                <div id="text-root">
+                    <div data-text="YOU" id="text-glitch">YOU</div>
+                </div>
+                <div class="subtext">make it?</div>
 
-            <div id="trailer">
-                <iframe width="1280" height="720"
-                src="https://www.youtube.com/embed/WW8EktmBP8M" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-            </div>
-            
-            <div id="textRoot">
-                <div data-text="How far will YOU make it?" id="textGlitch">How far will YOU make it?</div>        
-                <form class="text-center" style="margin-top: 50px" method="get" action="/files/test.apk">
-                    <input type="image" id="downloadButton" src="img/Download_Android.png" alt="Download on Android"/>
-                </form>
-            </div>
-        </div>
-
-        <section id="footer">
-            <div class="container text-center">
-                <p class="text-center"><a data-toggle="modal" data-target="#contactdata_modal">Credit</a></p>
+                <form method="get" action="/files/test.apk">
+                    <input type="image" id="download-btn" src="img/Download_Android.png" alt="Download on Android"/>
+                </form>   
                 
-                <!--Modal for contactdata-->
-                <div class="modal fade" id="contactdata_modal" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h1 class="col-12 modal-title text-center">Credit</h1>
-                            </div>
-                            <div class="modal-body">
-                              <i class="colored_icon fa fa-envelope fa-2x"></i><br/>
-                              <p><a href="mailto:gemperle.patrick@gmail.com">gemperle.patrick@gmail.com</a></p>
-                              <i class="colored_icon fa fa-xing fa-2x"></i><br/>
-                              <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Visit me on XING!</a></p>
+            </main>
+
+            <footer class="text-center">
+                    <p><a data-toggle="modal" data-target="#contactdata_modal">Credit</a></p>
+                    
+                    <!--Modal for contactdata-->
+                    <div class="modal fade" id="contactdata_modal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="col-12 modal-title text-center">Credit</h1>
+                                </div>
+                                <div class="modal-body">
+                                <i class="colored_icon fa fa-envelope fa-2x"></i><br/>
+                                <p><a href="mailto:gemperle.patrick@gmail.com">gemperle.patrick@gmail.com</a></p>
+                                <i class="colored_icon fa fa-xing fa-2x"></i><br/>
+                                <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Visit me on XING!</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+            </footer>
+        </div>
 
         <!--jQuery, must be before Bootstrap to avoid uncaught error-->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
