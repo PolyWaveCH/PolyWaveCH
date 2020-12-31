@@ -56,18 +56,6 @@ a:hover {
   transform: translate(-50%, -25%);
 }
 
-.trailer {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  justify-self: center;
-}
-
-.footer {
-  font-family: "Audiowide";
-  margin-top: 50px;
-}
-
 .modal-header {
   font-family: "Audiowide";
 }
@@ -79,10 +67,22 @@ a:hover {
 }
 
 /*-----IDs-----*/
+#trailer {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #downloadButton {
   height: 90px;
   width: 200px;
   border: none;
+}
+
+#footer {
+  font-family: "Audiowide";
+  margin-top: 50px;
 }
 
 #textRoot {
