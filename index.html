@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/custom.css">
         <!--Icons-->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
         <!--Metadata Tag for responsiveness-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <!--For correct IExplorer rendering-->
@@ -29,15 +30,37 @@
                     allowfullscreen></iframe>
                 </div>
 
-                <div class="subtext">How far will</div>
+                <div class="subtext">How Far Will</div>
                 <div id="text-root">
                     <div data-text="YOU" id="text-glitch">YOU</div>
                 </div>
-                <div class="subtext">make it?</div>
+                <div class="subtext">Make It?</div>
 
-                <form method="get" action="/files/test.apk">
+                <form method="get" action="/files/polyWave.apk">
                     <input type="image" id="download-btn" src="img/Download_Android.png" alt="Download on Android"/>
                 </form>   
+
+                <p><a data-toggle="modal" data-target="#howtoinstall_modal">How to install</a></p>
+                    
+                    <!--Modal how to install the apk-->
+                    <div class="modal fade" id="howtoinstall_modal" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="col-12 modal-title text-center">How to install the game</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Download the game and when prompted allow permission:</p>
+                                    <ol style="list-style-position: inside;">
+                                        <li>Tap "Settings"</li>
+                                        <li>Enable the switch next to "Allow from this source"</li>
+                                        <li>Go back and resume the installation</li>
+                                    </ol>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 
             </main>
 
