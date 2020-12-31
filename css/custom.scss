@@ -128,6 +128,17 @@ a:hover{
   background-color: #434444;
 }
 
+.modal-footer {
+  font-family: 'Roboto';
+  color: white;
+  background-color: #434444;
+  text-align: center;
+}
+
+.modal i {
+  margin-left: 10px;
+}
+
 .iframe-container {
   position: relative;
   overflow: hidden;
