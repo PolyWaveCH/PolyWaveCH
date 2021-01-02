@@ -82,7 +82,6 @@ body {
 }
 
 footer {
-  font-family: 'Audiowide';
   margin: 10px 0 10px 0;
   text-align: center;
   vertical-align: middle;
@@ -91,6 +90,7 @@ footer {
 a {
   color: #ffffff;
   text-decoration: underline;
+  font-family: 'Audiowide';
 }
 
 a:hover{
