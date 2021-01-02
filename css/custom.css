@@ -41,6 +41,7 @@ a {
 
 a:hover {
   color: #eeb5e9;
+  cursor: pointer;
 }
 
 /*-----classes-----*/
