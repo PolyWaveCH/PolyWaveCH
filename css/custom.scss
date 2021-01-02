@@ -49,11 +49,10 @@
   filter: alpha(opacity=$IEValue);
 }
 
-/*-----variables & root-attributes-----*/
-$offset: 6px;
-$textFSize: 48px;
-
+/*-----variables-----*/
 :root {
+  --offset: 6px;
+  --textFSize: 48px;
   --f-size: 84;
   --f-unit: 1px;
   --f: calc(var(--f-size) * var(--f-unit));
@@ -170,7 +169,7 @@ a:hover{
 .subtext {
   font-family: 'Audiowide';
   color: white;
-  font-size: $textFSize;
+  font-size: var(--textFSize);
 }
 
 /*-----IDs-----*/
@@ -185,21 +184,20 @@ a:hover{
 #text-root{
   background: var(--bgc);
   font-family: 'Audiowide';
-  font-size: $textFSize;
+  font-size: var(--textFSize);
   font-weight: bold;
   left: 50%;
 }
 
 #text-glitch{
   top: 0;
-  left: -$offset;
+  left: calc(-1*var(--offset));
   color: #ff00e1;
   mix-blend-mode: screen;
   position: relative;
   white-space: nowrap;
   -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-   filter: blur(1px);
+  filter: blur(1px);
   @include animation('skew 2s infinite');
   
   &:after, &:before{
@@ -209,13 +207,13 @@ a:hover{
   }
   &:after{
     top: 0;
-    left: $offset;
+    left: var(--offset);
     color: blue;
     @include animation('move 1.5s infinite');
   }
   &:before{
-    top: -0.4*$offset;
-    left: 0.6*$offset;
+    top: calc(-0.4*var(--offset));
+    left: calc(0.6*var(--offset));
     color: rgb(0,442,55);
   }
 }
@@ -266,10 +264,10 @@ a:hover{
   } 
   
   &::before {
-    animation: glitch-b 2s infinite alternate-reverse;
+    @include animation('glitch-b 2s infinite alternate-reverse');
   }
   &::after {
-    animation: glitch-a 3.5s infinite alternate;
+    @include animation('glitch-a 3.5s infinite alternate');
   }
 }
 
@@ -352,10 +350,10 @@ a:hover{
 @keyframes move{
   0%   { @include transform(none); }
   30%  { @include transform(none); }
-  31%  { @include transform(translateX(-$offset)) }
+  31%  { @include transform(translateX(var(--offset))) }
   33%  { @include transform(none); }
   98%  { @include transform(none); }
-  100% { @include transform(translateX($offset)) }
+  100% { @include transform(translateX(var(--offset))) }
 }
 
 /*-----Media-Queries-----*/
@@ -381,9 +379,8 @@ a:hover{
       background-size: cover;
   }
 
-  $textFSize: 28px;
-
   :root {
+    --textFSize: 28px;
     --f-size: 64;
     --f-unit: 1px;
     --f: calc(var(--f-size) * var(--f-unit));
@@ -397,9 +394,8 @@ a:hover{
       background-size: cover;
   }
 
-  $textFSize: 18px;
-
   :root {
+    --textFSize: 18px;
     --f-size: 54;
     --f-unit: 1px;
     --f: calc(var(--f-size) * var(--f-unit));

@@ -1,8 +1,10 @@
 /*-----fonts-----*/
 @import url("https://fonts.googleapis.com/css2?family=Audiowide");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-/*-----variables & root-attributes-----*/
+/*-----variables-----*/
 :root {
+  --offset: 6px;
+  --textFSize: 48px;
   --f-size: 84;
   --f-unit: 1px;
   --f: calc(var(--f-size) * var(--f-unit));
@@ -118,7 +120,7 @@ a:hover {
 .subtext {
   font-family: "Audiowide";
   color: white;
-  font-size: 48px;
+  font-size: var(--textFSize);
 }
 
 /*-----IDs-----*/
@@ -133,20 +135,19 @@ a:hover {
 #text-root {
   background: var(--bgc);
   font-family: "Audiowide";
-  font-size: 48px;
+  font-size: var(--textFSize);
   font-weight: bold;
   left: 50%;
 }
 
 #text-glitch {
   top: 0;
-  left: -6px;
+  left: calc(-1*var(--offset));
   color: #ff00e1;
   mix-blend-mode: screen;
   position: relative;
   white-space: nowrap;
   -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
   filter: blur(1px);
   -webkit-animation: skew 2s infinite;
   -moz-animation: skew 2s infinite;
@@ -160,7 +161,7 @@ a:hover {
 }
 #text-glitch:after {
   top: 0;
-  left: 6px;
+  left: var(--offset);
   color: blue;
   -webkit-animation: move 1.5s infinite;
   -moz-animation: move 1.5s infinite;
@@ -168,8 +169,8 @@ a:hover {
   animation: move 1.5s infinite;
 }
 #text-glitch:before {
-  top: -2.4px;
-  left: 3.6px;
+  top: calc(-0.4*var(--offset));
+  left: calc(0.6*var(--offset));
   color: #00ff37;
 }
 
@@ -209,9 +210,15 @@ a:hover {
   clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
 }
 #title-glitch::before {
+  -webkit-animation: glitch-b 2s infinite alternate-reverse;
+  -moz-animation: glitch-b 2s infinite alternate-reverse;
+  -o-animation: glitch-b 2s infinite alternate-reverse;
   animation: glitch-b 2s infinite alternate-reverse;
 }
 #title-glitch::after {
+  -webkit-animation: glitch-a 3.5s infinite alternate;
+  -moz-animation: glitch-a 3.5s infinite alternate;
+  -o-animation: glitch-a 3.5s infinite alternate;
   animation: glitch-a 3.5s infinite alternate;
 }
 
@@ -334,11 +341,11 @@ a:hover {
     transform: none;
   }
   31% {
-    -webkit-transform: translateX(-6px);
-    -moz-transform: translateX(-6px);
-    -ms-transform: translateX(-6px);
-    -o-transform: translateX(-6px);
-    transform: translateX(-6px);
+    -webkit-transform: translateX(var(--offset));
+    -moz-transform: translateX(var(--offset));
+    -ms-transform: translateX(var(--offset));
+    -o-transform: translateX(var(--offset));
+    transform: translateX(var(--offset));
   }
   33% {
     -webkit-transform: none;
@@ -355,11 +362,11 @@ a:hover {
     transform: none;
   }
   100% {
-    -webkit-transform: translateX(6px);
-    -moz-transform: translateX(6px);
-    -ms-transform: translateX(6px);
-    -o-transform: translateX(6px);
-    transform: translateX(6px);
+    -webkit-transform: translateX(var(--offset));
+    -moz-transform: translateX(var(--offset));
+    -ms-transform: translateX(var(--offset));
+    -o-transform: translateX(var(--offset));
+    transform: translateX(var(--offset));
   }
 }
 /*-----Media-Queries-----*/
@@ -384,6 +391,7 @@ a:hover {
   }
 
   :root {
+    --textFSize: 28px;
     --f-size: 64;
     --f-unit: 1px;
     --f: calc(var(--f-size) * var(--f-unit));
@@ -397,6 +405,7 @@ a:hover {
   }
 
   :root {
+    --textFSize: 18px;
     --f-size: 54;
     --f-unit: 1px;
     --f: calc(var(--f-size) * var(--f-unit));
