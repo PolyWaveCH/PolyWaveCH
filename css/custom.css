@@ -204,7 +204,7 @@ a:hover {
   text-align: center;
   transform: translateX(calc(var(--left) * 100%));
   filter: drop-shadow(0 0 transparent);
-  text-shadow: calc(var(--left) * -3em) 0 0.02em #00ff37, calc(var(--left) * -6em) 0 0.02em #ff00e1;
+  text-shadow: calc(var(--left) * -3em) 0 0.02em #04e2ff, calc(var(--left) * -6em) 0 0.02em #ff00d4;
   background-color: var(--bgc);
   clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
 }

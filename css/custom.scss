@@ -258,8 +258,8 @@ a:hover{
     // this helps to get rid of pixelization
     filter: drop-shadow(0 0 transparent); 
     
-    text-shadow: calc(var(--left) * -3em) 0 .02em rgb(0,442,55), 
-                 calc(var(--left) * -6em) 0 .02em #ff00e1;
+    text-shadow: calc(var(--left) * -3em) 0 .02em #04e2ff, 
+                 calc(var(--left) * -6em) 0 .02em #ff00d4;
     
     background-color: var(--bgc);
     clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
