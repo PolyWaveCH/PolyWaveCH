@@ -38,52 +38,53 @@
                     <input type="image" id="download-btn" src="img/Download_Android.png" alt="Download on Android"/>
                 </form>   
 
-                <p><a data-toggle="modal" data-target="#howtoinstall_modal">How to install</a></p>
-                    
-                    <!--Modal how to install the apk-->
-                    <div class="modal fade" id="howtoinstall_modal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h1 class="col-12 modal-title text-center">How to install the game</h1>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Download the game and when prompted allow permission:</p>
-                                    <ol style="list-style-position: inside;">
-                                        <li>Tap "Settings"</li>
-                                        <li>Enable the switch next to "Allow from this source"</li>
-                                        <li>Go back and resume the installation</li>
-                                    </ol>                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
+                <a data-toggle="modal" data-target="#howtoinstall_modal" style="margin: -15px 0 15px 0;">How to install</a>
             </main>
 
-            <footer class="text-center">
-                    <p><a data-toggle="modal" data-target="#contactdata_modal">Credit</a></p>
-                    
-                    <!--Modal for contactdata-->
-                    <div class="modal fade" id="contactdata_modal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h1 class="col-12 modal-title text-center">Created by</h1>
-                                </div>
-                                <div class="modal-body">
-                                <p><a href="https://ch.linkedin.com/in/silas-wirth-8b8bb5200">Silas Wirth</a><i class="colored_icon fa fa-linkedin fa-2x"></i></p>
-                                <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Patrick Gemperle</a><i class="colored_icon fa fa-xing fa-2x"></i></p>
-                                </div>
-                                <div class="modal-footer">
-                                <p><a href="mailto:polywavegame@gmail.com">Contact us</a><i class="colored_icon fa fa-envelope fa-2x"></i></p>
-                                </div>
-                            </div>
+            <footer>
+                <div>
+                    <a data-toggle="modal" data-target="#contactdata_modal">Credit</a>
+                </div>
+            </footer>
+
+            <!--Modal how to install the apk-->
+            <div class="modal fade" id="howtoinstall_modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="colored_icon fa fa-times-circle"></i></button>
+                        <h1 class="col-12 modal-title text-center">How to install the game</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p>Download the game and when prompted allow permission:</p>
+                            <ol style="list-style-position: inside;">
+                                <li>Tap "Settings"</li>
+                                <li>Enable the switch next to "Allow from this source"</li>
+                                <li>Go back and resume the installation</li>
+                            </ol>                                
                         </div>
                     </div>
-            </footer>
+                </div>
+            </div>
+
+            <!--Modal for contactdata-->
+            <div class="modal fade" id="contactdata_modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="colored_icon fa fa-times-circle"></i></button>
+                        <h1 class="col-12 modal-title text-center">Created by</h1>
+                        </div>
+                        <div class="modal-body">
+                        <p><a href="https://ch.linkedin.com/in/silas-wirth-8b8bb5200">Silas Wirth</a><i class="colored_icon fa fa-linkedin fa-2x"></i></p>
+                        <p><a href="https://www.xing.com/profile/Patrick_Gemperle2">Patrick Gemperle</a><i class="colored_icon fa fa-xing fa-2x"></i></p>
+                        </div>
+                        <div class="modal-footer">
+                        <p><a href="mailto:polywavegame@gmail.com">Contact us</a><i class="colored_icon fa fa-envelope fa-2x"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--jQuery, must be before Bootstrap to avoid uncaught error-->
